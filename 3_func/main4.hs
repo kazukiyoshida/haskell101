@@ -1,4 +1,4 @@
--- where
+-- where節
 -- whereで計算の中間結果に名前をつけることができる
 bmiTell :: Double -> Double -> String
 bmiTell weight height
@@ -11,7 +11,7 @@ bmiTell weight height
         normal = 25.0
         fat    = 30.0
 
--- whereのスコープ
+-- where節のスコープ
 -- これは動かない.. niceGreeting, badGreeting はスコープ外になる.
 -- greet :: String -> String
 -- greet "Juan" = niceGreeting ++ " Juan !"

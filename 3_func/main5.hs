@@ -1,10 +1,10 @@
--- where の中で パターンマッチ
+-- where節 の中で パターンマッチ
 initials :: String -> String -> String
 initials firstname lastname = [f] ++ ". " ++ [l] ++ "."
   where (f:_) = firstname
         (l:_) = lastname
 
--- where の中で定義できるのは定数だけじゃない、関数もだ
+-- where節 の中で定義できるのは定数だけじゃない、関数もだ
 calcBmis :: [(Double, Double)] -> [Double]
 calcBmis xs = [bmi w h | (w, h) <- xs]
   where bmi weight height = weight / height ^ 2
